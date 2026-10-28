@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WorkNest — сайт для пошуку роботи та розміщення вакансій">
+<title>Вакансії — WorkNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-top"><div class="container"><span>Вакансії по всій Україні — щодня нові</span><span>info@worknest.ua · +380 (44) 123-45-67</span></div></div>
+  <div class="header-main"><div class="container">
+    <a class="logo-link" href="index.html"><i></i><span>Work<b>Nest</b></span></a>
+    <nav id="nav"><ul><li><a href="index.html" class="">Головна</a></li><li><a href="vacancies.html" class="active">Вакансії</a></li><li><a href="post.html" class="">Роботодавцям</a></li><li><a href="saved.html" class="">Обране<span class="saved-count" hidden>0</span></a></li><li><a href="contacts.html" class="">Контакти</a></li></ul></nav>
+    <div class="header-cta"><a class="btn" href="post.html">Розмістити вакансію</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
+  </div></div>
+</header>
+
+<div class="page-head"><div class="container"><h1>Пошук вакансій</h1><p>Використовуйте пошук і фільтри, щоб знайти найкращу пропозицію.</p></div></div>
+<main class="container layout">
+  <aside class="form-card filters"><form id="filters">
+    <div class="field"><label for="fQ">Посада або компанія</label><input id="fQ" type="search" placeholder="Наприклад, бухгалтер"></div>
+    <div class="field"><label for="fCat">Категорія</label><select id="fCat"></select></div>
+    <div class="field"><label for="fCity">Місто</label><select id="fCity"></select></div>
+    <div class="field"><label for="fType">Зайнятість</label><select id="fType"></select></div>
+    <div class="field"><label for="fSalary">Зарплата від, грн</label><input id="fSalary" type="number" min="0" step="1000" placeholder="0"></div>
+    <div class="field"><label class="check"><input id="fRemote" type="checkbox"> Лише віддалена робота</label></div>
+    <button class="btn ghost" type="button" id="reset" style="width:100%">Скинути фільтри</button>
+  </form></aside>
+  <div>
+    <div class="results-bar"><strong id="count"></strong>
+      <select id="fSort" aria-label="Сортування" style="padding:9px 12px;border-radius:10px;border:1.5px solid var(--line);font-family:inherit">
+        <option value="new">Спочатку нові</option><option value="high">Зарплата: за спаданням</option><option value="low">Зарплата: за зростанням</option><option value="name">За назвою</option>
+      </select></div>
+    <div class="grid" id="grid"></div>
+    <div class="more-wrap"><button class="btn ghost" id="more">Показати ще</button></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="logo-link" href="index.html" style="color:#fff"><i></i><span>Work<b style="color:#8da2ff">Nest</b></span></a><p style="margin-top:12px">Платформа, що поєднує кандидатів і роботодавців: шукайте роботу, відгукуйтесь і розміщуйте вакансії безкоштовно.</p></div>
+      <div><h4>Кандидатам</h4><ul><li><a href="vacancies.html">Пошук вакансій</a></li><li><a href="saved.html">Обране</a></li><li><a href="index.html#faq">Запитання</a></li></ul></div>
+      <div><h4>Роботодавцям</h4><ul><li><a href="post.html">Розмістити вакансію</a></li><li><a href="contacts.html">Співпраця</a></li></ul></div>
+      <div><h4>Контакти</h4><ul><li>м. Біла Церква</li><li>info@worknest.ua</li><li>+380 (44) 123-45-67</li></ul></div>
+    </div>
+    <p class="copy">© 2026 WorkNest. Навчальний проєкт. Усі компанії та вакансії вигадані.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Нагору">↑</button>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

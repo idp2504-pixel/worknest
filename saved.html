@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WorkNest — сайт для пошуку роботи та розміщення вакансій">
+<title>Обране — WorkNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-top"><div class="container"><span>Вакансії по всій Україні — щодня нові</span><span>info@worknest.ua · +380 (44) 123-45-67</span></div></div>
+  <div class="header-main"><div class="container">
+    <a class="logo-link" href="index.html"><i></i><span>Work<b>Nest</b></span></a>
+    <nav id="nav"><ul><li><a href="index.html" class="">Головна</a></li><li><a href="vacancies.html" class="">Вакансії</a></li><li><a href="post.html" class="">Роботодавцям</a></li><li><a href="saved.html" class="active">Обране<span class="saved-count" hidden>0</span></a></li><li><a href="contacts.html" class="">Контакти</a></li></ul></nav>
+    <div class="header-cta"><a class="btn" href="post.html">Розмістити вакансію</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
+  </div></div>
+</header>
+
+<div class="page-head"><div class="container"><h1>Обране та мої відгуки</h1><p>Тут зберігаються вакансії, які вас зацікавили, та надіслані відгуки.</p></div></div>
+<main class="container" style="padding:34px 20px 70px">
+  <h2 style="margin-bottom:16px">Збережені вакансії</h2>
+  <div class="grid" id="savedList"></div>
+  <h2 style="margin:44px 0 16px">Надіслані відгуки</h2>
+  <table class="info-table"><thead><tr><th>Вакансія</th><th>Компанія</th><th>Дата</th><th></th></tr></thead><tbody id="appBody"></tbody></table>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="logo-link" href="index.html" style="color:#fff"><i></i><span>Work<b style="color:#8da2ff">Nest</b></span></a><p style="margin-top:12px">Платформа, що поєднує кандидатів і роботодавців: шукайте роботу, відгукуйтесь і розміщуйте вакансії безкоштовно.</p></div>
+      <div><h4>Кандидатам</h4><ul><li><a href="vacancies.html">Пошук вакансій</a></li><li><a href="saved.html">Обране</a></li><li><a href="index.html#faq">Запитання</a></li></ul></div>
+      <div><h4>Роботодавцям</h4><ul><li><a href="post.html">Розмістити вакансію</a></li><li><a href="contacts.html">Співпраця</a></li></ul></div>
+      <div><h4>Контакти</h4><ul><li>м. Біла Церква</li><li>info@worknest.ua</li><li>+380 (44) 123-45-67</li></ul></div>
+    </div>
+    <p class="copy">© 2026 WorkNest. Навчальний проєкт. Усі компанії та вакансії вигадані.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Нагору">↑</button>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

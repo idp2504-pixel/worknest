@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WorkNest — сайт для пошуку роботи та розміщення вакансій">
+<title>Розмістити вакансію — WorkNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-top"><div class="container"><span>Вакансії по всій Україні — щодня нові</span><span>info@worknest.ua · +380 (44) 123-45-67</span></div></div>
+  <div class="header-main"><div class="container">
+    <a class="logo-link" href="index.html"><i></i><span>Work<b>Nest</b></span></a>
+    <nav id="nav"><ul><li><a href="index.html" class="">Головна</a></li><li><a href="vacancies.html" class="">Вакансії</a></li><li><a href="post.html" class="active">Роботодавцям</a></li><li><a href="saved.html" class="">Обране<span class="saved-count" hidden>0</span></a></li><li><a href="contacts.html" class="">Контакти</a></li></ul></nav>
+    <div class="header-cta"><a class="btn" href="post.html">Розмістити вакансію</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
+  </div></div>
+</header>
+
+<div class="page-head"><div class="container"><h1>Розмістити вакансію</h1><p>Заповніть форму — вакансія з’явиться в загальному списку відразу після публікації.</p></div></div>
+<main class="container post-grid">
+  <form class="form-card" id="postForm" novalidate>
+    <div class="row2">
+      <div class="field"><label for="pTitle">Назва посади *</label><input id="pTitle" type="text"><span class="err" id="pTitleErr"></span></div>
+      <div class="field"><label for="pCompany">Компанія *</label><input id="pCompany" type="text"><span class="err" id="pCompanyErr"></span></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="pCat">Категорія</label><select id="pCat"></select></div>
+      <div class="field"><label for="pCity">Місто *</label><input id="pCity" type="text"><span class="err" id="pCityErr"></span></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="pType">Тип зайнятості</label><select id="pType"><option>Повна зайнятість</option><option>Часткова зайнятість</option><option>Стажування</option><option>Проєктна робота</option></select></div>
+      <div class="field"><label for="pExp">Досвід</label><select id="pExp"><option>Без досвіду</option><option>Від 1 року</option><option>Від 2 років</option></select></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="pFrom">Зарплата від, грн</label><input id="pFrom" type="number" min="0"></div>
+      <div class="field"><label for="pTo">Зарплата до, грн</label><input id="pTo" type="number" min="0"><span class="err" id="pToErr"></span></div>
+    </div>
+    <div class="field"><label class="check"><input id="pRemote" type="checkbox"> Можлива віддалена робота</label></div>
+    <div class="field"><label for="pDesc">Опис вакансії *</label><textarea id="pDesc" rows="4"></textarea><span class="err" id="pDescErr"></span></div>
+    <div class="row2">
+      <div class="field"><label for="pTasks">Обов’язки (кожен з нового рядка)</label><textarea id="pTasks" rows="3"></textarea></div>
+      <div class="field"><label for="pReqs">Вимоги (кожна з нового рядка)</label><textarea id="pReqs" rows="3"></textarea></div>
+    </div>
+    <div class="field"><label for="pEmail">Контактний email *</label><input id="pEmail" type="email"><span class="err" id="pEmailErr"></span></div>
+    <button class="btn" type="submit">Опублікувати вакансію</button>
+    <p class="success" id="postDone" hidden></p>
+  </form>
+  <aside class="sticky"><h3 style="margin-bottom:12px">Попередній перегляд</h3><div id="preview"></div>
+    <p class="section-sub" style="margin-top:14px;font-size:14px">Так вашу вакансію побачать кандидати. Картка оновлюється під час введення.</p></aside>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="logo-link" href="index.html" style="color:#fff"><i></i><span>Work<b style="color:#8da2ff">Nest</b></span></a><p style="margin-top:12px">Платформа, що поєднує кандидатів і роботодавців: шукайте роботу, відгукуйтесь і розміщуйте вакансії безкоштовно.</p></div>
+      <div><h4>Кандидатам</h4><ul><li><a href="vacancies.html">Пошук вакансій</a></li><li><a href="saved.html">Обране</a></li><li><a href="index.html#faq">Запитання</a></li></ul></div>
+      <div><h4>Роботодавцям</h4><ul><li><a href="post.html">Розмістити вакансію</a></li><li><a href="contacts.html">Співпраця</a></li></ul></div>
+      <div><h4>Контакти</h4><ul><li>м. Біла Церква</li><li>info@worknest.ua</li><li>+380 (44) 123-45-67</li></ul></div>
+    </div>
+    <p class="copy">© 2026 WorkNest. Навчальний проєкт. Усі компанії та вакансії вигадані.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Нагору">↑</button>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

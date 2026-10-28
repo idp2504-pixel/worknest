@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WorkNest — сайт для пошуку роботи та розміщення вакансій">
+<title>WorkNest — пошук роботи та розміщення вакансій</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-top"><div class="container"><span>Вакансії по всій Україні — щодня нові</span><span>info@worknest.ua · +380 (44) 123-45-67</span></div></div>
+  <div class="header-main"><div class="container">
+    <a class="logo-link" href="index.html"><i></i><span>Work<b>Nest</b></span></a>
+    <nav id="nav"><ul><li><a href="index.html" class="active">Головна</a></li><li><a href="vacancies.html" class="">Вакансії</a></li><li><a href="post.html" class="">Роботодавцям</a></li><li><a href="saved.html" class="">Обране<span class="saved-count" hidden>0</span></a></li><li><a href="contacts.html" class="">Контакти</a></li></ul></nav>
+    <div class="header-cta"><a class="btn" href="post.html">Розмістити вакансію</a><button class="burger" id="burger" aria-label="Меню">☰</button></div>
+  </div></div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="container">
+    <span class="section-label">Знайдіть роботу мрії</span>
+    <h1>Робота, яка підходить <span>саме вам</span></h1>
+    <p class="lead">Сотні актуальних вакансій від перевірених роботодавців. Шукайте, зберігайте та відгукуйтесь за кілька кліків.</p>
+    <form class="search-box" id="heroForm">
+      <input id="hQ" type="search" placeholder="Посада або компанія" aria-label="Пошук">
+      <select id="hCat" aria-label="Категорія"></select>
+      <button class="btn" type="submit">Знайти</button>
+    </form>
+    <div class="hero-tags">Популярне:
+      <a href="vacancies.html?q=розробник">Розробник</a><a href="vacancies.html?q=менеджер">Менеджер</a><a href="vacancies.html?q=бухгалтер">Бухгалтер</a><a href="vacancies.html?cat=hor">Сервіс</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="statistics"><div class="container"><div class="stats-grid">
+  <div class="stat"><b data-count="1240">0</b><span>активних вакансій</span></div>
+  <div class="stat"><b data-count="380">0</b><span>компаній-партнерів</span></div>
+  <div class="stat"><b data-count="9500">0</b><span>кандидатів на платформі</span></div>
+  <div class="stat"><b data-count="2700">0</b><span>успішних працевлаштувань</span></div>
+</div></div></section>
+
+<section id="categories"><div class="container">
+  <span class="section-label">Категорії</span><h2 class="section-title">Оберіть напрям діяльності</h2>
+  <p class="section-sub">Вакансії згруповано за професійними напрямами, щоб ви швидко знайшли потрібне.</p>
+  <div class="cat-grid" id="catGrid"></div>
+</div></section>
+
+<section id="featured" style="background:#fff"><div class="container">
+  <span class="section-label">Свіжі пропозиції</span><h2 class="section-title">Нові вакансії</h2>
+  <p class="section-sub">Найновіші вакансії, розміщені роботодавцями за останні дні.</p>
+  <div class="grid" id="topGrid"></div>
+  <p class="more-wrap"><a class="btn ghost" href="vacancies.html">Усі вакансії →</a></p>
+</div></section>
+
+<section id="how"><div class="container">
+  <span class="section-label">Як це працює</span><h2 class="section-title">Три прості кроки</h2>
+  <div class="tabs"><button class="tab active" data-tab="cand">Для кандидатів</button><button class="tab" data-tab="emp">Для роботодавців</button></div>
+  <div class="steps" data-tab="cand">
+    <div class="step"><h3>Знайдіть вакансію</h3><p>Скористайтеся пошуком і фільтрами за містом, зарплатою та типом зайнятості.</p></div>
+    <div class="step"><h3>Збережіть обране</h3><p>Позначайте цікаві пропозиції сердечком, щоб повернутися до них пізніше.</p></div>
+    <div class="step"><h3>Відгукніться</h3><p>Заповніть коротку форму — роботодавець отримає ваші контакти.</p></div>
+  </div>
+  <div class="steps" data-tab="emp" hidden>
+    <div class="step"><h3>Опишіть вакансію</h3><p>Вкажіть посаду, зарплату, обов’язки та вимоги в простій формі.</p></div>
+    <div class="step"><h3>Перегляньте попередньо</h3><p>Картка вакансії оновлюється відразу, поки ви вводите дані.</p></div>
+    <div class="step"><h3>Опублікуйте</h3><p>Вакансія одразу з’являється в загальному списку для всіх кандидатів.</p></div>
+  </div>
+</div></section>
+
+<section class="quote" id="quote"><div class="container">
+  <blockquote>«Вибирайте роботу до душі — і вам не доведеться працювати жодного дня.»</blockquote>
+  <cite>— Конфуцій</cite>
+</div></section>
+
+<section id="information"><div class="container">
+  <span class="section-label">Ринок праці</span><h2 class="section-title">Середня зарплата за напрямами</h2>
+  <p class="section-sub">Орієнтовні показники на основі вакансій, представлених на платформі.</p>
+  <table class="info-table">
+    <thead><tr><th>Напрям</th><th>Середня зарплата, грн</th><th>Найпопулярніша посада</th></tr></thead>
+    <tbody>
+      <tr><td>IT і розробка</td><td>40 000</td><td>Frontend-розробник</td></tr>
+      <tr><td>Фінанси та облік</td><td>32 000</td><td>Бухгалтер</td></tr>
+      <tr><td>Маркетинг</td><td>27 000</td><td>SMM-менеджер</td></tr>
+      <tr><td>Продажі</td><td>28 000</td><td>Менеджер із продажу</td></tr>
+      <tr><td>Сервіс і HoReCa</td><td>21 000</td><td>Бариста</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section id="faq" style="background:#fff"><div class="container" style="max-width:820px">
+  <span class="section-label">FAQ</span><h2 class="section-title">Часті запитання</h2>
+  <div class="faq-item"><button class="faq-q">Чи платний пошук роботи?</button><div class="faq-a">Ні, пошук вакансій і відгуки для кандидатів повністю безкоштовні.</div></div>
+  <div class="faq-item"><button class="faq-q">Як розмістити вакансію?</button><div class="faq-a">Відкрийте сторінку «Роботодавцям», заповніть форму та натисніть «Опублікувати».</div></div>
+  <div class="faq-item"><button class="faq-q">Де зберігаються мої збережені вакансії?</button><div class="faq-a">У пам’яті вашого браузера (localStorage), тому вони доступні без реєстрації.</div></div>
+  <div class="faq-item"><button class="faq-q">Чи можна працювати віддалено?</button><div class="faq-a">Так, у фільтрах є опція «Віддалена робота» — вона показує лише такі вакансії.</div></div>
+</div></section>
+
+<section id="newsletter"><div class="container"><div class="newsletter">
+  <h2>Отримуйте нові вакансії на пошту</h2><p>Підпишіться — і ми надсилатимемо добірку свіжих пропозицій.</p>
+  <form id="subForm" novalidate><input id="sEmail" type="email" placeholder="Ваш email"><button class="btn accent" type="submit">Підписатися</button></form>
+  <span class="err" id="sEmailErr"></span>
+</div></div></section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="logo-link" href="index.html" style="color:#fff"><i></i><span>Work<b style="color:#8da2ff">Nest</b></span></a><p style="margin-top:12px">Платформа, що поєднує кандидатів і роботодавців: шукайте роботу, відгукуйтесь і розміщуйте вакансії безкоштовно.</p></div>
+      <div><h4>Кандидатам</h4><ul><li><a href="vacancies.html">Пошук вакансій</a></li><li><a href="saved.html">Обране</a></li><li><a href="index.html#faq">Запитання</a></li></ul></div>
+      <div><h4>Роботодавцям</h4><ul><li><a href="post.html">Розмістити вакансію</a></li><li><a href="contacts.html">Співпраця</a></li></ul></div>
+      <div><h4>Контакти</h4><ul><li>м. Біла Церква</li><li>info@worknest.ua</li><li>+380 (44) 123-45-67</li></ul></div>
+    </div>
+    <p class="copy">© 2026 WorkNest. Навчальний проєкт. Усі компанії та вакансії вигадані.</p>
+  </div>
+</footer>
+<button class="to-top" id="toTop" aria-label="Нагору">↑</button>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
